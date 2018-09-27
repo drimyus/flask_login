@@ -1,11 +1,7 @@
 import os
-import cv2
-import dlib as dlib
 import math
 import numpy as np
-
 from flask import Flask, flash, render_template, request, redirect, url_for, send_from_directory
-from werkzeug.utils import secure_filename
 from forms import LoginForm
 
 from db_utils import DBUtils
