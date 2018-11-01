@@ -5,7 +5,7 @@ from flask import Flask, flash, render_template, request, redirect, url_for, sen
 from forms import LoginForm
 
 from db_utils import DBUtils
-db = DBUtils()
+
 
 """
 *-------------------------------------------------------*
@@ -26,6 +26,8 @@ app.config['SECRET_KEY'] = "cipherbook="
 def login():
     login_form = LoginForm(request.form)
     if request.method == "POST":
+        db = DBUtils()
+
         username = login_form.username.data
         password = login_form.password.data
         print(username, password)
