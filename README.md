@@ -7,4 +7,4 @@ sudo apt-get install libmysqlclient-dev
 
 sudo pip3 install mysqlclient, flask, flask_wtf
 
- 
+ 13.211.130.120
